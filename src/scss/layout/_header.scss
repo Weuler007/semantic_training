@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// Header é a região superior da página.
+// Em BEM, "site-header" é o bloco e "__container", "__brand" etc. são elementos.
+
+.site-header {
+  background: $color-surface;
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  &__container {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-block: 16px;
+  }
+
+  &__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  &__logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__name {
+    font-size: 1rem;
+  }
+}

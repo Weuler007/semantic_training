@@ -1,0 +1,18 @@
+// Reset pequeno: remove comportamentos que atrapalham o layout.
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

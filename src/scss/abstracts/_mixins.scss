@@ -1,0 +1,8 @@
+@use "./variables" as *;
+
+// Mixin é um bloco de código reutilizável.
+// Este centraliza o conteúdo e limita a largura máxima da página.
+@mixin container {
+  width: min(100% - 32px, $container-max-width);
+  margin-inline: auto;
+}

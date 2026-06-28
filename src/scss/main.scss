@@ -1,0 +1,18 @@
+// Arquivo principal do SCSS.
+// Ele organiza a ordem dos módulos, mas não guarda estilos grandes.
+
+@use "./base/reset";
+@use "./base/base";
+
+@use "./layout/header";
+@use "./layout/navigation";
+@use "./layout/main";
+@use "./layout/footer";
+
+@use "./components/hero";
+@use "./components/button";
+@use "./components/content";
+@use "./components/lesson";
+@use "./components/sidebar";
+
+@use "./layout/responsive";

@@ -1,0 +1,16 @@
+@use "../abstracts/mixins" as *;
+
+// Main é o conteúdo principal da página.
+// O container mantém o conteúdo alinhado com o header e o footer.
+
+.page-main {
+  @include container;
+  padding-block: 40px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+  align-items: start;
+}

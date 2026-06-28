@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+
+// Content estiliza o article principal.
+
+.content {
+  padding: 32px;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-base;
+  box-shadow: $shadow-soft;
+
+  &__header {
+    margin-bottom: 24px;
+  }
+
+  &__eyebrow {
+    margin: 0 0 6px;
+    color: $color-primary;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+
+// Lesson representa cada bloco de aula dentro do conteúdo principal.
+
+.lesson {
+  padding-block: 24px;
+  border-top: 1px solid $color-border;
+
+  &--highlight {
+    padding: 24px;
+    background: $color-warning-bg;
+    border: 1px solid $color-warning-border;
+    border-radius: $radius-base;
+  }
+
+  &__title {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+  }
+
+  &__text {
+    margin: 0;
+    color: $color-muted;
+  }
+}

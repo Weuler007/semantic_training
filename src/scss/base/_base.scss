@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+
+// Estilos base do documento.
+// Aqui ficam regras gerais, não componentes específicos.
+
+body {
+  background: $color-page;
+  color: $color-text;
+  font-family: $font-family-base;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}

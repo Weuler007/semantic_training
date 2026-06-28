@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// Footer é o rodapé do documento.
+
+.site-footer {
+  border-top: 1px solid $color-border;
+  background: $color-surface;
+
+  &__text {
+    @include container;
+    margin-block: 0;
+    padding-block: 24px;
+    color: $color-muted;
+    text-align: center;
+  }
+}

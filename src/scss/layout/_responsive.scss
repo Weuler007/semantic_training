@@ -1,0 +1,47 @@
+// Responsividade centralizada para facilitar o estudo.
+// Tablet: o aside desce para baixo do conteúdo.
+
+@media (max-width: 900px) {
+  .site-header__container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .content {
+    padding: 28px;
+  }
+}
+
+// Mobile: a navegação quebra linha e os blocos ficam mais compactos.
+@media (max-width: 560px) {
+  .site-nav__list {
+    flex-wrap: wrap;
+  }
+
+  .site-nav__link {
+    padding-inline: 10px;
+  }
+
+  .page-main {
+    padding-block: 24px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .hero__text {
+    font-size: 1rem;
+  }
+
+  .content,
+  .sidebar {
+    padding: 20px;
+  }
+}

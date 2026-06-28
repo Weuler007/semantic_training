@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+
+// Sidebar estiliza o aside, que é conteúdo complementar.
+
+.sidebar {
+  padding: 24px;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-base;
+  box-shadow: $shadow-soft;
+
+  &__title {
+    margin: 0 0 16px;
+    font-size: 1.25rem;
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 20px;
+    color: $color-muted;
+  }
+
+  &__item + &__item {
+    margin-top: 10px;
+  }
+}

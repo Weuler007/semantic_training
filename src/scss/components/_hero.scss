@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+
+// Hero é a primeira área de destaque dentro do main.
+
+.hero {
+  display: grid;
+  align-items: center;
+  min-height: 340px;
+  margin-bottom: 32px;
+  padding: 40px;
+  background: linear-gradient(135deg, $color-primary, $color-primary-dark);
+  border-radius: $radius-base;
+  color: $color-surface;
+
+  &__content {
+    max-width: 680px;
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.05;
+  }
+
+  &__text {
+    max-width: 56ch;
+    margin: 0 0 24px;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 1.125rem;
+  }
+}

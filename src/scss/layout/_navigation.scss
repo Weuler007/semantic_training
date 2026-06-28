@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+
+// Nav guarda links de navegação.
+// A lista ul/li é semântica porque representa uma coleção de links.
+
+.site-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: inline-flex;
+    padding: 8px 12px;
+    border-radius: $radius-base;
+    color: $color-muted;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      background: $color-page;
+      color: $color-primary;
+      outline: none;
+    }
+  }
+}
